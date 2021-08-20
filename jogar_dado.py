@@ -9,10 +9,11 @@ opcao = int(input(" 1- sim   2- não : "))
 print("\naguarde um momento... processando\n")
 time.sleep(0.5)
 
-if opcao != (1, 2):
-    while(opcao):
-        opcao= int(input(" opção invalida!\n 1-sim 2-não : "))
-if opcao is 1:
+if opcao == (1 or 2):
+    while opcao != 1 or 2:
+        opcao = input(" opção invalida!\n 1-sim 2-não : ")
+        pass 
+elif opcao is 1:
     print("correto, você escolheu jogar o dado:) ?\n \n processando ...")
     time.sleep(0.5)
 
@@ -26,9 +27,10 @@ if opcao is 1:
         print("****dado jogado****")
         time.sleep(0.10)
         print("dado:", dado)
-elif opcao is 2:
+elif opcao == 2:
     print (" você preferiu não jogar\n Deseja reconsiderar?")
-    
+else:
+    pass
 """ while opcao != (1 and 2):
     opcao= int(input(" opção invalida!\n 1-sim 2-não : ")) """
 
